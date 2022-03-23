@@ -1,12 +1,11 @@
 import './App.css';
-import Avatar from './components/shared/Avatar/Avatar';
+import Chat from './components/Chat';
 
 function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<p>hola mundo</p>
-				<Avatar></Avatar>
+				<Chat></Chat>
 			</header>
 		</div>
 	);
