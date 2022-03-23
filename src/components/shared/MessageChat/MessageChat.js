@@ -1,7 +1,7 @@
 import React from 'react';
-
-function MessageChat() {
-	return <div>MessageChat</div>;
+import './MessageChat.css';
+function MessageChat({ children }) {
+	return <div className="message">{children}</div>;
 }
 
 export default MessageChat;

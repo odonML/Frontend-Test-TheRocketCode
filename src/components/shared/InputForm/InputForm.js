@@ -1,7 +1,7 @@
 import React from 'react';
 import './InputForm.css';
 
-function InputForm({ type = 'text', placeholder, setValue }) {
+function InputForm({ type = 'text', placeholder, setValue, blur }) {
 	return (
 		<div className="cont-input">
 			<input
@@ -9,6 +9,7 @@ function InputForm({ type = 'text', placeholder, setValue }) {
 				type={type}
 				placeholder={placeholder}
 				onChange={(e) => setValue(e.target.value)}
+				onBlur={blur}
 			/>
 		</div>
 	);

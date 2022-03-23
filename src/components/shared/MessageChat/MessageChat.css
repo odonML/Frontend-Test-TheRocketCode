@@ -1,0 +1,14 @@
+.message {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	padding: 5px;
+	margin: 8px 0px;
+	border-radius: 10px 10px 0px 10px;
+	background-color: #f2668b;
+    display: flex;
+}
+p {
+	margin: 0px;
+	height: auto;
+}
