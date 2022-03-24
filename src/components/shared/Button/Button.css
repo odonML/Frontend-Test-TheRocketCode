@@ -1,8 +1,15 @@
 .btnChat {
 	width: 100%;
 	padding: 10px;
+	margin: 5px;
 	border-radius: 15px;
 	border: none;
 	color: #fff;
 	background-color: #03a688;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.btnChat:hover {
+	border-radius: 25px;
+	letter-spacing: 5px;
 }

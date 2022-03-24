@@ -8,3 +8,8 @@
 	font-size: calc(10px + 2vmin);
 	color: white;
 }
+.buttons {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+}

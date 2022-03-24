@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createUser } from '../service/userServices';
 import './Chat.css';
 import Avatar from './shared/Avatar/Avatar';
 import Button from './shared/Button/Button';
@@ -52,11 +53,21 @@ function Chat() {
 	};
 
 	// funtion send data
-	const sendData = () => {
+	const sendData = async () => {
 		setShowName(false);
 		setShowDate(false);
 		setShowInfo(false);
 		goFlow(4);
+		let obj = {
+			firstName,
+			secondName,
+			firstLastName,
+			secondLastName,
+			dateOfBirth: `${day} ${mounth} ${year}`,
+			phone,
+			email,
+		};
+		await createUser(obj);
 	};
 
 	return (
