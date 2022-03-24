@@ -1,0 +1,20 @@
+.cont-input {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 5px 0px;
+}
+.label {
+	text-align: left;
+}
+.input {
+	outline: none;
+	padding: 10px 7px;
+	border-radius: 0px;
+	border: none;
+	border-radius: 5px;
+	transition: border-radius 0.5s;
+}
+.input:focus {
+	border-radius: 10px;
+}

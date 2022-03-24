@@ -1,9 +1,11 @@
-import React from 'react'
-
-function Button() {
-  return (
-    <div>Button</div>
-  )
+import React from 'react';
+import './Button.css';
+function Button({ children, click }) {
+	return (
+		<button className="btnChat" onClick={click}>
+			{children}
+		</button>
+	);
 }
 
-export default Button
+export default Button;
